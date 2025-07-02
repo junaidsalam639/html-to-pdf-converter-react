@@ -1,40 +1,65 @@
 {
   "name": "html-to-pdf-converter-react",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A reusable React component to convert HTML content into downloadable PDFs using html2canvas and jsPDF.",
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "prepare": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "keywords": [
+    "react",
+    "html-to-pdf",
+    "pdf-converter",
+    "html2canvas",
+    "jspdf",
+    "tailwind",
+    "vite",
+    "component",
+    "html-to-pdf-converter"
+  ],
+  "author": "Junaid Salam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junaidsalam639/html-to-pdf-converter-react"
+  },
+  "homepage": "https://github.com/junaidsalam639/html-to-pdf-converter-react#readme",
   "dependencies": {
-    "@monaco-editor/react": "^4.7.0",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
     "html2canvas": "^1.4.1",
     "jspdf": "^3.0.1",
     "lucide-react": "^0.525.0",
-    "radix-ui": "^1.4.2",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwind-merge": "^3.3.1",
-    "tailwindcss-animate": "^1.0.7"
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.5.2",
+    "@vitejs/plugin-react": "^4.6.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.29.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.2.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "vite": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   }
 }
-
