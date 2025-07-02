@@ -1,0 +1,42 @@
+{
+  "name": "html-to-pdf-converter-react",
+  "version": "1.0.0",
+  "description": "A React component to convert HTML to PDF using html2canvas and jsPDF.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepare": "tsc && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "react",
+    "html2pdf",
+    "html-to-pdf",
+    "pdf",
+    "converter",
+    "tailwind",
+    "jsPDF",
+    "html2canvas"
+  ],
+  "author": "Junaid Salam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junaidsalam639/html-to-pdf-converter-react"
+  },
+  "homepage": "https://github.com/junaidsalam639/html-to-pdf-converter-react#readme"
+}
